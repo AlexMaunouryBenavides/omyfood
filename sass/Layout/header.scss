@@ -1,0 +1,15 @@
+header {
+  padding: 20px;
+  box-shadow: 4px 1px 6px #c1c1bd;
+  position: relative;
+  ul {
+    @include flex;
+    text-align: center;
+  }
+  .logo_header {
+    width: 50%;
+  }
+  a {
+    display: none;
+  }
+}

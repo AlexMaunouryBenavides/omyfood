@@ -1,0 +1,163 @@
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.button {
+  border-radius: 25px;
+  color: white;
+  cursor: pointer;
+  padding: 15px 20px;
+  box-shadow: 0px 5px 5px lightgrey;
+  background: linear-gradient(to top left, #9356dc, #ff79da);
+}
+
+header {
+  padding: 20px;
+  box-shadow: 4px 1px 6px #c1c1bd;
+  position: relative;
+}
+header ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+header .logo_header {
+  width: 50%;
+}
+header a {
+  display: none;
+}
+
+body {
+  font-family: roboto, sans-serif;
+}
+
+.first_section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f7f7f7;
+  padding-bottom: 80px;
+  text-align: center;
+}
+.first_section a {
+  font-size: 18px;
+}
+.first_section .search_bar {
+  padding: 20px 0;
+  width: 100%;
+  background-color: #edebeb;
+}
+.first_section .search_text {
+  border: none;
+  background-color: #edebeb;
+  text-align: center;
+  font-weight: 600;
+  font-size: 18px;
+}
+.first_section .info_article_title {
+  margin: 20px 0;
+  padding: 0 40px;
+  font-size: 30px;
+}
+.first_section .info_article_p {
+  margin: 20px 0 50px 0;
+  padding: 0 10px;
+  font-weight: 300;
+  font-size: 20px;
+}
+
+.fonctionement {
+  margin: 50px 0;
+}
+
+.fonctionement_titre {
+  margin: 20px 25px;
+}
+
+.btn_fonctionement_2 ul {
+  display: flex;
+  align-items: center;
+  margin: 20px 30px;
+  box-shadow: 0px 0px 10px #edebeb;
+  padding: 15px;
+  border-radius: 15px;
+}
+.btn_fonctionement_2 ul .btn_li_number {
+  position: relative;
+  left: -30px;
+  background-color: #9356dc;
+  padding: 5px 10px;
+  border-radius: 50%;
+  color: white;
+  font-weight: 300;
+}
+.btn_fonctionement_2 ul li {
+  margin-right: 10px;
+  position: relative;
+  left: -20px;
+  font-weight: 600;
+}
+
+.restaurants {
+  background-color: #f7f7f7;
+  padding-top: 50px;
+}
+.restaurants h2 {
+  margin: 0 0 20px 20px;
+  font-weight: 800;
+}
+
+.carte {
+  margin: 15px 20px;
+  box-shadow: #999999 0 0 10px;
+  border-radius: 15px;
+}
+.carte img {
+  height: 150px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
+
+.block_carte {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+}
+
+.block_like {
+  font-size: 25px;
+}
+
+footer {
+  background-color: #323232;
+  color: white;
+  padding: 15px 0 30px 0;
+}
+
+.footer_logo {
+  font-family: shrikhand;
+  margin: 0 0 20px 20px;
+  font-size: 17px;
+}
+
+.footer_p {
+  display: flex;
+  margin: 6px 20px;
+  font-weight: 400;
+  font-size: 15px;
+}
+.footer_p i {
+  margin-right: 10px;
+  font-size: 13px;
+}
+
+/*# sourceMappingURL=style.css.map */
