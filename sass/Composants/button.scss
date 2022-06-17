@@ -5,4 +5,23 @@
   padding: 15px 20px;
   box-shadow: 0px 5px 5px lightgrey;
   background: linear-gradient(to top left, $primaire, $secondaire);
+  transition: opacity 1s, box-shadow 1s;
+  &:hover {
+    opacity: 0.75;
+    box-shadow: 0px 10px 5px lightgrey;
+  }
+}
+
+.button_menu {
+  border-radius: 25px;
+  color: white;
+  cursor: pointer;
+  padding: 15px 40px;
+  box-shadow: 0px 5px 5px lightgrey;
+  background: linear-gradient(to top left, $primaire, $secondaire);
+  transition: opacity 1s, box-shadow 1s;
+  &:hover {
+    opacity: 0.75;
+    box-shadow: 0px 10px 5px lightgrey;
+  }
 }

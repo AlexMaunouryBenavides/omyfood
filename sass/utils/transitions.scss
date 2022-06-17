@@ -1,0 +1,25 @@
+.block_principal_menu {
+  display: block;
+  margin: auto;
+  width: 94%;
+  animation: slidefood 5s;
+
+  @media (min-width: 540px) {
+    width: 50%;
+  }
+}
+
+.block_check {
+  background-color: $tertiaire;
+  border-radius: 0 15px 15px 0;
+  width: 0;
+  padding: 20px 0;
+  text-align: center;
+  overflow: hidden;
+  color: white;
+  transition: all 0.5s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+}

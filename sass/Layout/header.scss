@@ -1,15 +1,24 @@
-header {
+.header_principal {
   padding: 20px;
   box-shadow: 4px 1px 6px #c1c1bd;
   position: relative;
-  ul {
+
+  ._list_header {
     @include flex;
     text-align: center;
+    & a {
+      display: none;
+    }
   }
-  .logo_header {
-    width: 50%;
+  ._logo_header {
+    width: 60%;
   }
-  a {
-    display: none;
+  ._list_header_menu {
+    @include flex;
+    text-align: center;
+    & a {
+      font-size: 20px;
+      color: black;
+    }
   }
 }

@@ -1,0 +1,20 @@
+.footer_principal {
+  background-color: rgb(50, 50, 50);
+  color: white;
+  padding: 15px 0 30px 0;
+  ._logo {
+    font-family: shrikhand;
+    margin: 0 0 20px 20px;
+    font-size: 17px;
+  }
+  ._p {
+    display: flex;
+    margin: 6px 20px;
+    font-weight: 400;
+    font-size: 15px;
+    i {
+      margin-right: 10px;
+      font-size: 13px;
+    }
+  }
+}

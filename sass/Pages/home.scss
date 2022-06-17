@@ -13,39 +13,52 @@ body {
   .search_bar {
     padding: 20px 0;
     width: 100%;
-    background-color: $gray;
+    background-color: #eae9e9;
   }
   .search_text {
     border: none;
-    background-color: $gray;
+    background-color: #eae9e9;
     text-align: center;
     font-weight: 600;
     font-size: 18px;
   }
-  .info_article_title {
-    margin: 20px 0;
-    padding: 0 40px;
-    font-size: 30px;
-  }
-  .info_article_p {
-    margin: 20px 0 50px 0;
-    padding: 0 10px;
-    font-weight: 300;
-    font-size: 20px;
+  .info_article {
+    &_title {
+      margin: 20px 0;
+      padding: 0 40px;
+      font-size: 30px;
+    }
+
+    &_p {
+      margin: 20px 0 50px 0;
+      padding: 0 10px;
+      font-weight: 300;
+      font-size: 20px;
+    }
   }
 }
 .fonctionement {
   margin: 50px 0;
+
+  &_titre {
+    margin: 30px 25px;
+  }
 }
-.fonctionement_titre {
-  margin: 20px 25px;
+.btn_fonctionement_2 {
+  :hover {
+    background-color: #f5edff;
+    color: $primaire;
+    i {
+      color: $primaire;
+    }
+  }
 }
 .btn_fonctionement_2 ul {
   display: flex;
   align-items: center;
   margin: 20px 30px;
   box-shadow: 0px 0px 10px $gray;
-  padding: 15px;
+  padding: 20px;
   border-radius: 15px;
 
   .btn_li_number {
@@ -57,6 +70,9 @@ body {
     color: white;
     font-weight: 300;
   }
+  i {
+    color: $shadow;
+  }
 
   li {
     margin-right: 10px;
@@ -67,7 +83,8 @@ body {
 }
 .restaurants {
   background-color: $gray_background;
-  padding-top: 50px;
+  padding: 50px 0 40px 0;
+
   h2 {
     margin: 0 0 20px 20px;
     font-weight: 800;
@@ -75,15 +92,26 @@ body {
 }
 
 .carte {
-  margin: 15px 20px;
+  margin: 20px 20px;
   box-shadow: $shadow 0 0 10px;
   border-radius: 15px;
+  position: relative;
   img {
     height: 150px;
     width: 100%;
     object-fit: cover;
     border-radius: 15px 15px 0 0;
   }
+}
+.img_new {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background-color: $tertiaire;
+  padding: 5px 15px;
+  color: rgba(0, 0, 0, 0.4);
+  font-weight: 600;
+  border-radius: 2px;
 }
 .block_carte {
   display: flex;
@@ -93,24 +121,27 @@ body {
 }
 .block_like {
   font-size: 25px;
+  &:active {
+    background: linear-gradient(to top left, $primaire, $secondaire);
+  }
 }
 footer {
   background-color: rgb(50, 50, 50);
   color: white;
   padding: 15px 0 30px 0;
-}
-.footer_logo {
-  font-family: shrikhand;
-  margin: 0 0 20px 20px;
-  font-size: 17px;
-}
-.footer_p {
-  display: flex;
-  margin: 6px 20px;
-  font-weight: 400;
-  font-size: 15px;
-  i {
-    margin-right: 10px;
-    font-size: 13px;
+  &_logo {
+    font-family: shrikhand;
+    margin: 0 0 20px 20px;
+    font-size: 17px;
+  }
+  &_p {
+    display: flex;
+    margin: 6px 20px;
+    font-weight: 400;
+    font-size: 15px;
+    i {
+      margin-right: 10px;
+      font-size: 13px;
+    }
   }
 }

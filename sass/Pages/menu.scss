@@ -1,0 +1,130 @@
+body {
+  font-family: roboto, sans-serif;
+}
+.img_header {
+  background-image: url(images/resto_3.jpg);
+  height: 250px;
+  background-size: cover;
+}
+
+.container_menu {
+  background-color: $gray_background;
+}
+
+.menu_entrees {
+  ._block_titre {
+    box-sizing: border-box;
+    padding: 20px 25px;
+    margin-top: -36px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    z-index: 10;
+    background-color: #f6f6f6;
+
+    ._titre_menu {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-family: Shrikhand;
+      font-size: 20px;
+    }
+    ._coeur_titre {
+      font-size: 25px;
+      cursor: pointer;
+      position: relative;
+      & li {
+        position: absolute;
+        top: -15px;
+        right: 5px;
+      }
+
+      .fa-regular:hover {
+        color: transparent;
+        opacity: 0;
+      }
+      .fa-solid {
+        color: transparent;
+        opacity: 0;
+        transition: all 1500ms ease;
+      }
+      .fa-solid:hover {
+        opacity: 1;
+        background: linear-gradient($primaire, $secondaire);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+      }
+    }
+  }
+}
+
+.block_principal_menu {
+  ._titre {
+    margin-top: 40px;
+    font-weight: 400;
+    font-size: 18px;
+    text-transform: uppercase;
+    border-bottom: 4px solid $tertiaire;
+    width: 45px;
+    margin-left: 5px;
+  }
+}
+
+.block_menu {
+  box-shadow: 0px 0px 10px $gray;
+  margin: 15px 0px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &:hover {
+    overflow: hidden;
+
+    .block_check {
+      width: 20%;
+      transition: all 0.5s ease;
+    }
+    & i {
+      animation: moveCircle 1.25s;
+    }
+  }
+
+  .block_menu_texte {
+    width: 85%;
+    font-size: 1rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+    line-height: 28px;
+    & h4 {
+      font-size: 18px;
+    }
+    & p {
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+  }
+  .block_menu_prix {
+    position: relative;
+    width: 15%;
+
+    .euros {
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      top: 44%;
+    }
+    & span {
+      font-weight: bold;
+    }
+  }
+}
+
+.btn_menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 60px 0;
+}
