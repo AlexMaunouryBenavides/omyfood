@@ -22,10 +22,60 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <section class="loadout">
+      <div class="container">
+        <div class="circle">
+          <span style="--i: 0"></span>
+          <span style="--i: 1"></span>
+          <span style="--i: 2"></span>
+          <span style="--i: 3"></span>
+          <span style="--i: 4"></span>
+          <span style="--i: 5"></span>
+          <span style="--i: 6"></span>
+          <span style="--i: 7"></span>
+          <span style="--i: 8"></span>
+          <span style="--i: 9"></span>
+          <span style="--i: 10"></span>
+          <span style="--i: 11"></span>
+          <span style="--i: 12"></span>
+          <span style="--i: 13"></span>
+          <span style="--i: 14"></span>
+          <span style="--i: 15"></span>
+          <span style="--i: 16"></span>
+          <span style="--i: 17"></span>
+          <span style="--i: 18"></span>
+          <span style="--i: 19"></span>
+          <span style="--i: 20"></span>
+        </div>
+        <div class="circle">
+          <span style="--i: 0"></span>
+          <span style="--i: 1"></span>
+          <span style="--i: 2"></span>
+          <span style="--i: 3"></span>
+          <span style="--i: 4"></span>
+          <span style="--i: 5"></span>
+          <span style="--i: 6"></span>
+          <span style="--i: 7"></span>
+          <span style="--i: 8"></span>
+          <span style="--i: 9"></span>
+          <span style="--i: 10"></span>
+          <span style="--i: 11"></span>
+          <span style="--i: 12"></span>
+          <span style="--i: 13"></span>
+          <span style="--i: 14"></span>
+          <span style="--i: 15"></span>
+          <span style="--i: 16"></span>
+          <span style="--i: 17"></span>
+          <span style="--i: 18"></span>
+          <span style="--i: 19"></span>
+          <span style="--i: 20"></span>
+        </div>
+      </div>
+    </section>
     <div class="container_full">
       <!--HEADER-->
       <header class="header_principal">
-        <ul class="_list_header">
+        <ul class="header_principal__list">
           <li>
             <a href="index.html"
               ><i class="fa-solid fa-arrow-left indexArrow"></i
@@ -33,7 +83,7 @@
           </li>
           <li>
             <img
-              class="_logo_header"
+              class="header_principal__logo"
               src="images/logo_ohmyfood.png"
               alt="logo_ohmyfood"
             />
@@ -44,13 +94,18 @@
       <!--BARRE DE RECHERCHER ET MENU-->
 
       <section class="first_section">
-        <div class="search_bar">
+        <div class="first_section__search_bar">
           <a href=""><i class="fas fa-map-marker-alt"></i></a>
-          <input class="search_text" placeholder="Paris, Belleville" />
+          <input
+            class="first_section__search_text"
+            placeholder="Paris, Belleville"
+          />
         </div>
-        <div class="info_article">
-          <h1 class="info_article_title">Réservez le menu qui vous convient</h1>
-          <p class="info_article_p">
+        <div class="first_section__info_article">
+          <h1 class="first_section__info_article__title">
+            Réservez le menu qui vous convient
+          </h1>
+          <p class="first_section__info_article__p">
             Découvrez des restaurants d'exeption, séléctionés par nos soins.
           </p>
           <div><a href="#" class="button">Explorer nos restaurants</a></div>
@@ -60,31 +115,31 @@
       <!--FONCTIONNEMENT-->
 
       <section class="fonctionement">
-        <div class="fonctionement_titre">
+        <div class="fonctionement__titre">
           <h2>Fonctionnement</h2>
         </div>
         <div class="btn_fonctionement">
-          <article class="btn_fonctionement_2">
+          <div class="btn_fonctionement_2">
             <ul>
               <li class="btn_li_number">1</li>
               <li><i class="fa-solid fa-mobile-screen-button"></i></li>
               <li>Choisissez un restaurant</li>
             </ul>
-          </article>
-          <article class="btn_fonctionement_2">
+          </div>
+          <div class="btn_fonctionement_2">
             <ul>
               <li class="btn_li_number">2</li>
               <li><i class="fa-solid fa-list"></i></li>
               <li>Composez votre menu</li>
             </ul>
-          </article>
-          <article class="btn_fonctionement_2">
+          </div>
+          <div class="btn_fonctionement_2">
             <ul>
               <li class="btn_li_number">3</li>
               <li><i class="fa-solid fa-store"></i></li>
               <li>Dégustez un restaurant</li>
             </ul>
-          </article>
+          </div>
         </div>
       </section>
 
@@ -92,79 +147,89 @@
 
       <section class="restaurants">
         <h2>Restaurants</h2>
-        <div class="restaurants_all_carte">
-          <div class="carte">
-            <img src="images/resto_1.jpg" alt="la palette du goût" />
-            <span class="img_new">Nouveau</span>
-            <div class="block_carte">
-              <div class="block_txt">
-                <h3>La palette du goût</h3>
-                <p>Ménilmontant</p>
-              </div>
-              <div class="block_like">
-                <i class="fa-regular fa-heart"></i>
-              </div>
-            </div>
-          </div>
-          <div class="carte">
-            <img src="images/resto_2.jpg" alt="La note enchanté" />
-            <span class="img_new">Nouveau</span>
-            <div class="block_carte">
-              <div class="block_txt">
-                <h3>La note enchanté</h3>
-                <p>Charonne</p>
-              </div>
-              <div class="block_like">
-                <i class="fa-regular fa-heart"></i>
+        <div class="restaurants__all_carte">
+          <a href="Menu_la_palette_du_gout.html">
+            <div class="carte">
+              <img src="images/resto_1.jpg" alt="la palette du goût" />
+              <span class="img_new">Nouveau</span>
+              <div class="block_carte">
+                <div class="block_txt">
+                  <h3>La palette du goût</h3>
+                  <p>Ménilmontant</p>
+                </div>
+                <div class="block_like">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="carte">
-            <img src="images/resto_3.jpg" alt="A la française" />
-            <div class="block_carte">
-              <div class="block_txt">
-                <h3>A la française</h3>
-                <p>Cité rouge</p>
-              </div>
-              <div class="block_like">
-                <i class="fa-regular fa-heart"></i>
-              </div>
-            </div>
-          </div>
-          <div class="carte">
-            <img src="images/resto_4.jpg" alt="Le délice des sens" />
-            <div class="block_carte">
-              <div class="block_txt">
-                <h3>Le délice des sens</h3>
-                <p>Folie-Méricourt</p>
-              </div>
-              <div class="block_like">
-                <i class="fa-regular fa-heart"></i>
+          </a>
+          <a href="Menu_La_note_enchanté.html">
+            <div class="carte">
+              <img src="images/resto_2.jpg" alt="La note enchanté" />
+              <span class="img_new">Nouveau</span>
+              <div class="block_carte">
+                <div class="block_txt">
+                  <h3>La note enchanté</h3>
+                  <p>Charonne</p>
+                </div>
+                <div class="block_like">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
               </div>
             </div>
-          </div>
+          </a>
+
+          <a href="Menu_a_la_française.html">
+            <div class="carte">
+              <img src="images/resto_3.jpg" alt="A la française" />
+              <div class="block_carte">
+                <div class="block_txt">
+                  <h3>A la française</h3>
+                  <p>Cité rouge</p>
+                </div>
+                <div class="block_like">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a href="Menu_Le_délice_des_sens.html">
+            <div class="carte">
+              <img src="images/resto_4.jpg" alt="Le délice des sens" />
+              <div class="block_carte">
+                <div class="block_txt">
+                  <h3>Le délice des sens</h3>
+                  <p>Folie-Méricourt</p>
+                </div>
+                <div class="block_like">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+              </div>
+            </div>
+          </a>
         </div>
       </section>
 
       <!--FOOTER-->
 
       <footer class="footer_principal">
-        <div class="_logo">
+        <div class="footer_principal__logo">
           <p>Ohmyfood</p>
         </div>
-        <div class="_p">
+        <div class="footer_principal__p">
           <i class="fa-solid fa-utensils"></i>
           <p>Proposer un restaurant</p>
         </div>
-        <div class="_p">
+        <div class="footer_principal__p">
           <i class="fa-solid fa-handshake-angle"></i>
           <p>Devenez partenaire</p>
         </div>
-        <div class="_p">
+        <div class="footer_principal__p">
           <p>Mentions légal</p>
         </div>
-        <div class="_p">
-          <p>Contact</p>
+        <div class="footer_principal__p">
+          <a href="mailto:gmail.com"> <p>Contact</p></a>
         </div>
       </footer>
     </div>

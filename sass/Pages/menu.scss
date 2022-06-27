@@ -1,8 +1,23 @@
 body {
   font-family: roboto, sans-serif;
 }
-.img_header {
+.img_header_1 {
+  background-image: url(/images/resto_1.jpg);
+  height: 250px;
+  background-size: cover;
+}
+.img_header_2 {
+  background-image: url(/images/resto_2.jpg);
+  height: 250px;
+  background-size: cover;
+}
+.img_header_3 {
   background-image: url(images/resto_3.jpg);
+  height: 250px;
+  background-size: cover;
+}
+.img_header_4 {
+  background-image: url(images/resto_4.jpg);
   height: 250px;
   background-size: cover;
 }
@@ -12,7 +27,7 @@ body {
 }
 
 .menu_entrees {
-  ._block_titre {
+  &__block_titre {
     box-sizing: border-box;
     padding: 20px 25px;
     margin-top: -36px;
@@ -21,14 +36,14 @@ body {
     z-index: 10;
     background-color: #f6f6f6;
 
-    ._titre_menu {
+    &__titre_menu {
       display: flex;
       align-items: center;
       justify-content: space-between;
       font-family: Shrikhand;
       font-size: 20px;
     }
-    ._coeur_titre {
+    &__coeur_titre {
       font-size: 25px;
       cursor: pointer;
       position: relative;

@@ -3,17 +3,20 @@
   box-shadow: 4px 1px 6px #c1c1bd;
   position: relative;
 
-  ._list_header {
+  &__list {
     @include flex;
     text-align: center;
     & a {
       display: none;
     }
   }
-  ._logo_header {
+  &__logo {
     width: 60%;
+    @media (min-width: 767px) {
+      width: 100%;
+    }
   }
-  ._list_header_menu {
+  &__list_menu {
     @include flex;
     text-align: center;
     & a {

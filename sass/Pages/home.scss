@@ -10,26 +10,26 @@ body {
   a {
     font-size: 18px;
   }
-  .search_bar {
+  &__search_bar {
     padding: 20px 0;
     width: 100%;
     background-color: #eae9e9;
   }
-  .search_text {
+  &__search_text {
     border: none;
     background-color: #eae9e9;
     text-align: center;
     font-weight: 600;
     font-size: 18px;
   }
-  .info_article {
-    &_title {
+  &__info_article {
+    &__title {
       margin: 20px 0;
       padding: 0 40px;
       font-size: 30px;
     }
 
-    &_p {
+    &__p {
       margin: 20px 0 50px 0;
       padding: 0 10px;
       font-weight: 300;
@@ -40,8 +40,15 @@ body {
 .fonctionement {
   margin: 50px 0;
 
-  &_titre {
+  &__titre {
     margin: 30px 25px;
+    @media (min-width: 767px) {
+      font-size: 25px;
+    }
+  }
+  @media (min-width: 1025px) {
+    margin: 50px auto;
+    max-width: 80%;
   }
 }
 .btn_fonctionement_2 {
@@ -51,6 +58,9 @@ body {
     i {
       color: $primaire;
     }
+  }
+  @media (min-width: 767px) {
+    font-size: 25px;
   }
 }
 .btn_fonctionement_2 ul {
@@ -88,6 +98,18 @@ body {
   h2 {
     margin: 0 0 20px 20px;
     font-weight: 800;
+    @media (min-width: 1025px) {
+      margin-left: 170px;
+    }
+  }
+  @media (min-width: 767px) {
+    font-size: 22px;
+  }
+  &__all_carte {
+    @media (min-width: 1025px) {
+      max-width: 80%;
+      margin: auto;
+    }
   }
 }
 
@@ -101,6 +123,9 @@ body {
     width: 100%;
     object-fit: cover;
     border-radius: 15px 15px 0 0;
+    @media (min-width: 1025px) {
+      height: 420px;
+    }
   }
 }
 .img_new {
