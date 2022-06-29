@@ -45,6 +45,11 @@
     width: 50%;
   }
 }
+@media (min-width: 767px) {
+  .block_principal_menu {
+    width: 80%;
+  }
+}
 
 .block_check {
   background-color: #99e2d0;
@@ -261,6 +266,12 @@
 .header_principal__list_menu a {
   font-size: 20px;
   color: black;
+}
+@media (min-width: 767px) {
+  .header_principal__list_menu a {
+    font-size: 50px;
+    margin-right: 50px;
+  }
 }
 
 .footer_principal {
