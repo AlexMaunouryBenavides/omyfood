@@ -397,10 +397,23 @@ body {
   position: relative;
   left: -30px;
   background-color: #9356dc;
-  padding: 5px 10px;
   border-radius: 50%;
   color: white;
   font-weight: 300;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 767px) {
+  .btn_fonctionement_2 ul .btn_li_number {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .btn_fonctionement_2 ul i {
   color: #999999;
@@ -506,25 +519,25 @@ body {
 }
 
 .img_header_1 {
-  background-image: url(/images/resto_1.jpg);
+  background-image: url(../images/resto_1.jpg);
   height: 250px;
   background-size: cover;
 }
 
 .img_header_2 {
-  background-image: url(/images/resto_2.jpg);
+  background-image: url(../images/resto_2.jpg);
   height: 250px;
   background-size: cover;
 }
 
 .img_header_3 {
-  background-image: url(images/resto_3.jpg);
+  background-image: url(../images/resto_3.jpg);
   height: 250px;
   background-size: cover;
 }
 
 .img_header_4 {
-  background-image: url(images/resto_4.jpg);
+  background-image: url(../images/resto_4.jpg);
   height: 250px;
   background-size: cover;
 }
