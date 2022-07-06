@@ -7,11 +7,12 @@
   position: fixed;
   z-index: 10;
   background: $primaire;
+  top: 100%;
   animation: fadeOut 3s forwards;
   -webkit-animation: fadeOut 3s forwards;
-  -moz-animation: fadeOut ease 3s;
-  -o-animation: fadeOut ease 3s;
-  -ms-animation: fadeOut ease 3s;
+  -moz-animation: fadeOut 3s forwards;
+  -o-animation: fadeOut 3s forwards;
+  -ms-animation: fadeOut 3s forwards;
 
   .container {
     display: flex;
@@ -27,7 +28,7 @@
       left: 0;
       width: 100%;
       height: 100%;
-      transform: rotate(calc(18deg * var(--i)));
+      transform: rotate (calc(18deg * var(--i)));
     }
   }
 }
